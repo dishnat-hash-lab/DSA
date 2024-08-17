@@ -80,6 +80,7 @@ int main(){
             if (res==0)
             {
                 count++;
+                
             }
         }
     }
