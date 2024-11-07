@@ -50,44 +50,44 @@ Output:
 • An array of integers representing the player's rank after each new score.
 */
 
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int h,n;
-//     cout<<"\nEnter total number of entries in leaderboard:";
-//     cin>>h;
-//     int ld[h];
-//     cout<<"\nInput array leaderbord:";
-//     for (int i = 0; i < h; i++)
-//     {
-//         cin>>ld[i];
-//     }
-//     cout<<"\nEnter total number of players:";
-//     cin>>n;
-//     int a[n],r[n];
-//     cout<<"\nInput array player's score:";
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin>>a[i];
-//     }
+#include<iostream>
+using namespace std;
+int main(){
+    int h,n;
+    cout<<"\nEnter total number of entries in leaderboard:";
+    cin>>h;
+    int ld[h];
+    cout<<"\nInput array leaderbord:";
+    for (int i = 0; i < h; i++)
+    {
+        cin>>ld[i];
+    }
+    cout<<"\nEnter total number of players:";
+    cin>>n;
+    int a[n],r[n];
+    cout<<"\nInput array player's score:";
+    for (int i = 0; i < n; i++)
+    {
+        cin>>a[i];
+    }
 
-//     for (int i = 0; i<n; i++)
-//     {
-//         for (int j = h-1; j >=0; j--)
-//         {
-//             if (ld[j]>a[i])
-//             {
-//                 r[i]=j+1;
-//                 break;
-//             }
-//             else{
-//                 r[i]=1;
-//             }
-//         }  
-//     }
-//     cout<<"\nArray of player rank :";
-//     for (int k = 0; k < n; k++)
-//     {
-//         cout<<"\t"<<r[k];
-//     }
-// }
+    for (int i = 0; i<n; i++)
+    {
+        for (int j = h-1; j >=0; j--)
+        {
+            if (ld[j]>a[i])
+            {
+                r[i]=j+1;
+                break;
+            }
+            else{
+                r[i]=1;
+            }
+        }  
+    }
+    cout<<"\nArray of player rank :";
+    for (int k = 0; k < n; k++)
+    {
+        cout<<"\t"<<r[k];
+    }
+}
