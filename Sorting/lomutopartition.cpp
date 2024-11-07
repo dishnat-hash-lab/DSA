@@ -6,7 +6,7 @@ void swap(int &a,int &b){
     b=temp;
 }
 int lomutopartition(int arr[],int l,int h){
-    int p=arr[h];//we assume pivot element to be last element always
+    int p=h;//we assume pivot element to be last element always
 
     int i=l-1;
     for(int j=l;j<h;j++){
